@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  archipelago:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - type: bind
+        source: ./Players
+        target: /Archipelago/Players
+      - type: bind
+        source: ./output
+        target: /Archipelago/output
+    network_mode: host
+    ports:
+      - "80:80"
