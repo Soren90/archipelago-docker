@@ -15,6 +15,7 @@ docker compose up -d
 Access the site on http://localhost
 
 # Generate game
+Make sure all of your player yamls and roms are added to their respective folders.
 ```
 docker compose exec archipelago python Generate.py
 ```
