@@ -35,3 +35,5 @@ If you are adding new Roms or Worlds you need to rebuild the image again
 ```
 docker compose build
 ```
+
+If you want to be able to generate games on your local instance, you need to use network_mode: host in the docker-compose.yaml file, as every game will use a random port for the game.

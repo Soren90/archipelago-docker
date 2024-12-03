@@ -1,6 +1,7 @@
 version: '3.8'
 services:
   archipelago:
+    container_name: archipelago
     build: 
       context: .
       dockerfile: Dockerfile
@@ -11,6 +12,6 @@ services:
       - type: bind
         source: ./output
         target: /Archipelago/output
-    network_mode: host
+    #network_mode: host
     ports:
       - "80:80"
